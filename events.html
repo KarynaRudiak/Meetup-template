@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Meetup</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-container">
+            <div class="header-container__left">
+                <a href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
+                <div class="header-search">
+                    <input type="search" placeholder="Search events">
+                    <input type="search" value="Berlin, DE">
+                </div>
+            </div>
+            <div class="header-container__right">
+                <button class="eng">English</button>
+                <button class="logIn">Log in</button>
+                <button class="signUp">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter"></section>
+        <div class="filter-container">
+            <div class="filter-container__left">
+                <div class="filter-title">
+                    <h2>Events near Berlin, DE</h2>
+                    <h3 class="filter-title__h3">Events</h3>
+                </div>
+                <div class="filter-wrap">
+                    <button class="filter-btn">Choose Category</button>
+                    <ul class="filter-menu">
+                        <li class="filter-item" id="social">Social Activities</li>
+                        <li class="filter-item" id="hobbies">Hobbies and Passions</li>
+                        <li class="filter-item" id="health">Health and Wellbeing</li>
+                        <li class="filter-item" id="business">Business</li>
+                        <li class="filter-item" id="technology">Technology</li>
+                    </ul>
+                </div>
+                
+                <div class="filter-wrap">
+                    <button class="filter-btn" id="distance">Choose Distance</button>
+                    <ul class="filter-menu">
+                        <li class="filter-item" id="5">5 km</li>
+                        <li class="filter-item" id="10">10 km</li>
+                        <li class="filter-item" id="15">15 km</li>
+                        <li class="filter-item" id="25">25 km</li>
+                        <li class="filter-item" id="50">50 km</li>
+                        <li class="filter-item" id="75">75 km</li>
+                        <li class="filter-item" id="100">100 km</li>
+                    </ul>
+                </div>
+                
+                <div class="filter-wrap">
+                    <button class="filter-btn">Choose Type</button>
+                    <ul class="filter-menu">
+                        <li class="filter-item" id="online">Online</li>
+                        <li class="filter-item" id="offline">Offline</li>
+                    </ul>
+                </div>
+                
+                <div class="filter-wrap">
+                    <button class="filter-btn" id="day">Filter by Day</button>
+                </div>
+                
+                
+                <button class="filter__reset" id="reset">Reset filters</button>
+                    <div class="filter-list"></div>
+                        
+            </div>  
+            <div class="filter-container__right">
+                <p>Find events near</p>
+                <h3>Berlin, DE</h3>
+                <div class="iframe-wrap">
+                    <button class="iframe-close"><img src="./img/close.svg" alt="close"></button>
+                    <div class="iframe-overley">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310847.3191151419!2d13.09509286889401!3d52.50638615478068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1733833656462!5m2!1sen!2sde" width="350" height="285" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-create">
+                <p>Create your own Meetup group.</p>
+                <button>Get Started</button>
+            </div>
+            <hr>
+            <div class="footer-list">
+                <ul class="footer-list__column">
+                    <li><a href="#">
+                            <h4>Your Account</h4>
+                        </a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                </ul>
+                <ul class="footer-list__column">
+                    <li><a href="#">
+                            <h4>Discover</h4>
+                        </a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Cities</a></li>
+                    <li><a href="#">Online Events</a></li>
+                    <li><a href="#">Local Guides</a></li>
+                    <li><a href="#">Make Friends</a></li>
+                </ul>
+                <ul class="footer-list__column">
+                    <li><a href="#">
+                            <h4>Meetup</h4>
+                        </a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Meetup Pro</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Podcast</a></li>
+                </ul>
+            </div>
+            <div class="footer-media">
+                <p>Follow us</p>
+                <div class="media__list">
+                    <div class="media__list-left">
+                        <img src="./img/Facebook.svg" alt="Facebook">
+                        <img src="./img/Twitter.svg" alt="Twitter">
+                        <img src="./img/YouTube.svg" alt="YouTube">
+                        <img src="./img/Instagram.svg" alt="Instagram">
+                        <img src="./img/TikTok.svg" alt="TikTok">
+                    </div>
+                    <div class="media__list-right">
+                        <img src="./img/Google Play.svg" alt="Google Play">
+                        <img src="./img/App Store.svg" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-downBlock">
+                    <ul>
+                        <li><a class="first-elem" href="#">© 2024 Meetup</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Do Not Sell or Share My Personal Data</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
