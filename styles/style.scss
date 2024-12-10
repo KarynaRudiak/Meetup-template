@@ -1,0 +1,33 @@
+@use './header.scss';
+@use './join.scss';
+@use './events.scss';
+@use './uncomming.scss';
+@use './advertising.scss';
+@use './categories.scss';
+@use './popular.scss';
+@use './discover.scss';
+@use './friendships.scss';
+@use './footer.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+}
+
+main {
+    max-width: 1192px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+

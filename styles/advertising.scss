@@ -1,0 +1,44 @@
+.advertising {
+    margin-bottom: 64px;
+
+    &-container {
+        background-color: #97CAD114;
+        border-radius: 8px;
+        padding: 20px 56px;
+        display: flex;
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 739px;
+            padding-right: 75px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 36px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 16px;
+            }
+
+            button {
+                color: white;
+                background-color: #E32359;
+                border: none;
+                border-radius: 8px;
+                padding: 8px 67px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 192px;
+            }
+        }
+    }
+}

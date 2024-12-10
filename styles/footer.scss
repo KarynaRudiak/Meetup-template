@@ -1,0 +1,126 @@
+.footer {
+    &-container {
+        max-width: 1512px;
+        background-color: #212121;
+        padding: 24px 196px 40px 196px;
+    }
+
+    &-create {
+        display: flex;
+        p {
+            color:  #F6F7F8;
+            margin: 10px 15px 35px 0;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            width: 250px;
+        }
+
+        button {
+            color: #FFFFFF;
+            background-color: transparent;
+            border: 2px solid #FFFFFF;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 10px 14px;
+            width: 119px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-list {
+        margin: 24px 0;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            height: 236px;
+
+            h4 {
+                color: #F6F7F8;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                color: #C5C4C4;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            
+        }
+    }
+
+    &-media {
+        margin: 24px 0; 
+
+        p {
+            color: #F6F7F8;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 12px;
+        }  
+    }
+
+    &-downBlock {
+        margin: 40px 0;
+
+        ul {
+            display: flex;
+            gap: 24px;
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                color: #C5C4C4;
+                text-decoration: none;
+            }
+
+            .first-elem {
+                color: #FFFFFF;
+            }
+        }
+    }
+    
+    hr {
+        color: #707070;
+    }
+}
+
+.media {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        &-left {
+            display: flex;
+            gap: 32px;
+            padding: 24px 0;
+        }
+
+        &-right {
+            display: flex;
+            gap: 12px;
+        }
+    }
+}

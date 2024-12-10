@@ -1,0 +1,94 @@
+.uncomming {
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: #00798A;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                border: none;
+                background-color: transparent;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__items-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 34px;
+    }
+
+    &-item {
+        width: 272px;
+        height: 399px;
+        position: relative;
+
+        h3 {
+            margin: 12px 0 8px 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            height: 72px;
+            max-width: 256px;
+        }
+
+        &__type {
+            margin: 8px 0 8px 0;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #707070;
+        }
+
+        &__time {
+            display: flex;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            gap: 6px;
+        }
+
+        &__details {
+            display: flex;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            gap: 6px;
+
+            p {
+                margin-right: 15px;
+            }
+        }
+
+        &::before {
+            content: url(../img/Online-Event.svg);
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+    }
+}

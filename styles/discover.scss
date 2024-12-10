@@ -1,0 +1,66 @@
+.discover {
+    margin-bottom: 64px;
+
+    &-title {
+        margin-bottom: 24px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__item-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    &-item {
+        padding: 32px 112px 24px 89px;
+        max-width: 580px;
+        background-color: #97CAD114;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 360px;
+        }
+
+        a {
+            width: 200px;
+            color: #00798A;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: none;
+        }
+
+        &:first-child::before {
+            content: url(../img/discover.svg);
+            position: absolute;
+            top: 32px;
+            left: 34px;
+        }
+
+        &:nth-child(2)::before {
+            content: url(../img/plus.svg);
+            position: absolute;
+            top: 32px;
+            left: 34px;
+        }
+    }
+}

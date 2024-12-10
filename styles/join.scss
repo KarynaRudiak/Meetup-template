@@ -1,0 +1,35 @@
+.join {
+
+    &-container {
+        margin-top: 71px;
+        display: flex;
+
+        &__text {
+            max-width: 600px;
+            padding-right: 20px;
+            margin-right: 54px;
+
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+                margin-bottom: 24.5px;
+                font-weight: 700;
+            }
+
+            p {
+                margin-bottom: 24px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            button {
+                border: none;
+                background-color: #00798A;
+                padding: 8px 15px;
+                border-radius: 8px;
+                color: white;
+                margin-bottom: 122px;
+            }
+        }
+    }
+}

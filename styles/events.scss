@@ -1,0 +1,108 @@
+.events {
+    margin-bottom: 40px;
+
+    &-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            h3 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 36px;
+                width: 160px;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: #00798A;
+                background-color: #97CAD11F;
+                padding: 12px 42px 8px 12px;
+                border-radius: 8px;
+                position: relative;
+
+                &::after {
+                    content: url(../img/events-near-pen.svg);
+                    position: absolute;
+                    top: 12px;
+                    right: 10px;
+                }
+            }
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: #00798A;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                border: none;
+                background-color: transparent;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__items-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 34px;
+    }
+
+    &-item {
+        width: 272px;
+        height: 399px;
+        border-radius: 4px;
+
+        h3 {
+            margin: 12px 0 8px 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            height: 72px;
+            max-width: 256px;
+        }
+
+        &__type {
+            margin: 8px 0 8px 0;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #707070;
+        }
+
+        &__time {
+            display: flex;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.35px;
+            gap: 6px;
+        }
+
+        &__details {
+            display: flex;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            gap: 6px;
+
+            p {
+                margin-right: 15px;
+            }
+        }
+    }
+}
