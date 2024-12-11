@@ -17,8 +17,16 @@
         }
 
         &__right {
-            display: flex;
-            align-items: center;
+            
+            &.bg {
+                display: flex;
+                align-items: center;
+            }
+
+            &.sml {
+                display: none;
+            }
+
 
             a {
                 color: #00798A;
@@ -45,6 +53,16 @@
         height: 399px;
         position: relative;
 
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .p-sml {
+            display: none;
+        }
+
         h3 {
             margin: 12px 0 8px 0;
             font-weight: 600;
@@ -60,6 +78,7 @@
             font-size: 14px;
             line-height: 20px;
             color: #707070;
+            height: 40px;
         }
 
         &__time {

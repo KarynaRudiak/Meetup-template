@@ -213,7 +213,7 @@ resetBtn.addEventListener('click', () => {
 
 //close
 const btnClose = document.querySelector('.iframe-close');
-const map = document.querySelector('.iframe-wrap')
+const map = document.querySelector('.filter-container__right')
 
 btnClose.addEventListener('click', () => {
     map.classList.toggle('hidden')
