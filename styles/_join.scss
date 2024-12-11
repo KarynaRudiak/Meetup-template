@@ -27,8 +27,19 @@
                 background-color: #00798A;
                 padding: 8px 15px;
                 border-radius: 8px;
-                color: white;
                 margin-bottom: 122px;
+
+                &:hover {
+                    background-color: #07434b;
+                }
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
     }

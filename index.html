@@ -16,23 +16,26 @@
 <body>
 
     <header class="header">
-        <nav class="header-container">
+        <div class="header-container">
             <div class="header-container__left">
-                <img src="./img/logo.svg" alt="logo">
+                <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="logo"></a>
                 <div class="header-search">
-                    <input type="search" placeholder="Search events">
-                    <input type="search" value="Berlin, DE">
+                    <input class="search" type="search" placeholder="Search events">
+                    <input class="search" type="search" value="Berlin, DE">
                 </div>
             </div>
-            <div class="header-container__right">
-                <button class="eng">English</button>
-                <button class="logIn">Log in</button>
-                <button class="signUp">Sign Up</button>
-            </div>
-        </nav>
+            <nav class="header-container__right">
+                <a href="#" class="eng">English</a>
+                <a href="#" class="logIn">Log in</a>
+                <a href="#" class="signUp">Sign Up</a>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <div class="header-search__sml">
+            <input class="search" type="search" placeholder="Search events">
+        </div>
         <section class="join">
             <div class="join-container">
                 <div class="join-container__text">
@@ -41,7 +44,7 @@
                     <p>Whatever your interest, from hiking and reading to networking and skill sharing,
                         there are thousands of people who share it on Meetup. Events are happening
                         every day—sign up to join the fun.</p>
-                    <button>Join Meetup</button>
+                    <button><a href="./events.html">Join Meetup</a></button>
                 </div>
                 <div class="join-container__img">
                     <img src="./img/irl_event.svg.svg" alt="join-img">
@@ -55,33 +58,39 @@
                         <h3>Event near</h3>
                         <p>Mountain View, CA</p>
                     </div>
-                    <div class="events-title__right">
+                    <div class="events-title__right bg">
                         <a href="./events.html">See all events</a>
                     </div>
                 </div>
                 <div class="events__items-list">
                     <div class="events-item">
-                        <img src="./img/eventItem1.svg" alt="event">
-                        <h3>Day Trading Idea and
-                            Strategy</h3>
-                        <p class="events-item__type">Business (5 km)</p>
-                        <div class="events-item__time">
-                            <img src="./img/event-date.svg" alt="time">
-                            <p>Mon, Mar 18 · 7:00 PM PDT</p>
+                        <div class="events-item__img">
+                            <img src="./img/eventItem1.svg" alt="event">
                         </div>
-                        <div class="events-item__details">
-                            <img src="./img/event-going.svg" alt="going">
-                            <p class="test">1 going</p>
-                            <img src="./img/event-price.svg" alt="price">
-                            <p>Free</p>
+                        <div class="events-item__text">
+                            <p class="p-sml">Mon, Mar 18 · 7:00 PM PDT</p>
+                            <h3>Day Trading Idea and Strategy</h3>
+                            <p class="events-item__type">Business</p>
+                            <div class="events-item__time">
+                                <img src="./img/event-date.svg" alt="time">
+                                <p>Mon, Mar 18 · 7:00 PM PDT</p>
+                            </div>
+                            <div class="events-item__details">
+                                <img src="./img/event-going.svg" alt="going">
+                                <p>1 going</p>
+                                <img src="./img/event-price.svg" alt="price">
+                                <p>Free</p>
+                            </div>
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem2.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem2.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>Let's Talk Networking: JPMorgan Chase in
-                                Palo Alto</h3>
-                            <p class="events-item__type">Business (25 km)</p>
+                            <p class="p-sml">Tue, Mar 19 · 5:00 PM PDT</p>
+                            <h3>Let's Talk Networking: JPMorgan Chase in Palo Alto</h3>
+                            <p class="events-item__type">Business</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
                                 <p>Tue, Mar 19 · 5:00 PM PDT</p>
@@ -95,11 +104,12 @@
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem3.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem3.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>Tech Talks & Quiz: Next-
-                                Gen Database Solutions
-                                for Emerging Use Cases</h3>
+                            <p class="p-sml">Wed, Mar 13 · 6:00 PM PDT</p>
+                            <h3>INFJ Personality Type - Coffee Shop Meet & Greet</h3>
                             <p class="events-item__type">Technology</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
@@ -114,10 +124,11 @@
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem4.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem4.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>INFORMS San Francisco
-                                Chapter In-Person Event</h3>
+                            <h3>INFORMS San Francisco Chapter In-Person Event</h3>
                             <p class="events-item__type">Health and Wellbeing (50 km)</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
@@ -132,10 +143,11 @@
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem5.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem5.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>AI Wednesdays - Meet
-                                and Greet!</h3>
+                            <h3>AI Wednesdays - Meet and Greet!</h3>
                             <p class="events-item__type">Technology (5 km)</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
@@ -150,10 +162,11 @@
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem6.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem6.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>ROS By-The-Bay March
-                                2024</h3>
+                            <h3>ROS By-The-Bay March 2024</h3>
                             <p class="events-item__type">Social Activities</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
@@ -168,10 +181,11 @@
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem7.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem7.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>Free Christian Singles'
-                                Dinner</h3>
+                            <h3>Free Christian Singles' Dinner</h3>
                             <p class="events-item__type">Hobbies and Passions (10 km)</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
@@ -186,11 +200,11 @@
                         </div>
                     </div>
                     <div class="events-item">
-                        <img src="./img/eventItem8.svg" alt="event">
+                        <div class="events-item__img">
+                            <img src="./img/eventItem8.svg" alt="event">
+                        </div>
                         <div class="events-item__text">
-                            <h3>In-person: Deep Dive into
-                                RAG Architectures (Food
-                                served)</h3>
+                            <h3>In-person: Deep Dive into RAG Architectures (Food served)</h3>
                             <p class="events-item__type">Hobbies and Passions (50 km)</p>
                             <div class="events-item__time">
                                 <img src="./img/event-date.svg" alt="time">
@@ -204,6 +218,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="events-title__right sml">
+                        <a href="./events.html">See all events</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -213,83 +230,107 @@
                     <div class="uncomming-title__left">
                         <h3>Upcoming online events</h3>
                     </div>
-                    <div class="uncomming-title__right">
+                    <div class="uncomming-title__right bg">
                         <a href="./events.html">See all events</a>
                     </div>
                 </div>
                 <div class="uncomming__items-list">
                     <div class="uncomming-item">
-                        <img src="./img/uncommingEvent1.svg" alt="uncomming-event#1">
-                        <h3>Amazing On-Demand 15
-                            Min Interviews with Top
-                            Coaches and Speakers</h3>
-                        <p class="uncomming-item__type">Business (25 km)</p>
-                        <div class="uncomming-item__time">
-                            <img src="./img/event-date.svg" alt="time">
-                            <p>Thu, Mar 14 · 6:00 PM PDT</p>
+                        <div class="uncomming-item__img">
+                            <img src="./img/uncommingEvent1.svg" alt="uncomming-event#1">
                         </div>
-                        <div class="uncomming-item__details">
-                            <img src="./img/event-going.svg" alt="going">
-                            <p class="test">3 going</p>
-                            <img src="./img/event-price.svg" alt="price">
-                            <p>Free</p>
-                        </div>
-                    </div>
-                    <div class="uncomming-item">
-                        <img src="./img/uncommingEvent2.svg" alt="uncomming-event#1">
-                        <h3>Vision Pro Developers
-                            Online Meetup</h3>
-                        <p class="uncomming-item__type">Technology</p>
-                        <div class="uncomming-item__time">
-                            <img src="./img/event-date.svg" alt="time">
-                            <p>Wed, Mar 13 · 7:00 PM PDT</p>
-                        </div>
-                        <div class="uncomming-item__details">
-                            <img src="./img/event-going.svg" alt="going">
-                            <p class="test">51 going</p>
-                            <img src="./img/event-price.svg" alt="price">
-                            <p>Free</p>
+                        <div class="uncomming-item__text">
+                            <p class="p-sml">Thu, Mar 14 · 6:00 PM PDT</p>
+                            <h3>All Nations - Manhattan Missions Church Bible Study</h3>
+                            <p class="uncomming-item__type">Business (25 km)</p>
+                            <div class="uncomming-item__time">
+                                <img src="./img/event-date.svg" alt="time">
+                                <p>Thu, Mar 14 · 6:00 PM PDT</p>
+                            </div>
+                            <div class="uncomming-item__details">
+                                <img src="./img/event-going.svg" alt="going">
+                                <p class="test">3 going</p>
+                                <img src="./img/event-price.svg" alt="price">
+                                <p>Free</p>
+                            </div>
                         </div>
                     </div>
                     <div class="uncomming-item">
-                        <img src="./img/uncommingEvent3.svg" alt="uncomming-event#1">
-                        <h3>Significant Musical
-                            Moments</h3>
-                        <p class="uncomming-item__type">Hobbies and Passions (10 km)</p>
-                        <div class="uncomming-item__time">
-                            <img src="./img/event-date.svg" alt="time">
-                            <p>Wed, Mar 13 · 6:00 PM PDT</p>
+                        <div class="uncomming-item__img">
+                            <img src="./img/uncommingEvent2.svg" alt="uncomming-event#1">
                         </div>
-                        <div class="uncomming-item__details">
-                            <img src="./img/event-going.svg" alt="going">
-                            <p class="test">16 going</p>
-                            <img src="./img/event-price.svg" alt="price">
-                            <p>Free</p>
+                        <div class="uncomming-item__text">
+                            <p class="p-sml">Wed, Mar 13 · 7:00 PM PDT</p>
+                            <h3>Vision Pro Developers
+                                Online Meetup</h3>
+                            <p class="uncomming-item__type">Technology</p>
+                            <div class="uncomming-item__time">
+                                <img src="./img/event-date.svg" alt="time">
+                                <p>Wed, Mar 13 · 7:00 PM PDT</p>
+                            </div>
+                            <div class="uncomming-item__details">
+                                <img src="./img/event-going.svg" alt="going">
+                                <p class="test">51 going</p>
+                                <img src="./img/event-price.svg" alt="price">
+                                <p>Free</p>
+                            </div>
                         </div>
                     </div>
                     <div class="uncomming-item">
-                        <img src="./img/uncommingEvent4.svg" alt="uncomming-event#1">
-                        <h3>FREE Webinar : <br>
-                            Introduction to Power BI</h3>
-                        <p class="uncomming-item__type">Technology</p>
-                        <div class="uncomming-item__time">
-                            <img src="./img/event-date.svg" alt="time">
-                            <p>Thu, Mar 14 · 5:30 PM PDT</p>
+                        <div class="uncomming-item__img">
+                            <img src="./img/uncommingEvent3.svg" alt="uncomming-event#1">
                         </div>
-                        <div class="uncomming-item__details">
-                            <img src="./img/event-going.svg" alt="going">
-                            <p class="test">33 going</p>
-                            <img src="./img/event-price.svg" alt="price">
-                            <p>Free</p>
+                        <div class="uncomming-item__text">
+                            <p class="p-sml">Wed, Mar 13 · 6:00 PM PDT</p>
+                            <h3>Significant Musical
+                                Moments</h3>
+                            <p class="uncomming-item__type">Hobbies and Passions (10 km)</p>
+                            <div class="uncomming-item__time">
+                                <img src="./img/event-date.svg" alt="time">
+                                <p>Wed, Mar 13 · 6:00 PM PDT</p>
+                            </div>
+                            <div class="uncomming-item__details">
+                                <img src="./img/event-going.svg" alt="going">
+                                <p class="test">16 going</p>
+                                <img src="./img/event-price.svg" alt="price">
+                                <p>Free</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="uncomming-item">
+                        <div class="uncomming-item__img">
+                            <img src="./img/uncommingEvent4.svg" alt="uncomming-event#1">
+                        </div>
+                        <div class="uncomming-item__text">
+                            <h3>FREE Webinar : 
+                                Introduction to Power BI</h3>
+                            <p class="uncomming-item__type">Technology</p>
+                            <div class="uncomming-item__time">
+                                <img src="./img/event-date.svg" alt="time">
+                                <p>Thu, Mar 14 · 5:30 PM PDT</p>
+                            </div>
+                            <div class="uncomming-item__details">
+                                <img src="./img/event-going.svg" alt="going">
+                                <p class="test">33 going</p>
+                                <img src="./img/event-price.svg" alt="price">
+                                <p>Free</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uncomming-title__right sml">
+                        <a href="./events.html">See all events</a>
                     </div>
                 </div>
-            </div>
+            </div>            
         </section>
         <section class="advertising">
             <div class="advertising-container">
+              
                 <div class="advertising-container__left">
                     <h3>Join Meetup</h3>
+                    <div class="img-sml">
+                        <img src="./img/joinMeetUp.svg" alt="">
+                    </div>
                     <p>People use Meetup to meet new people, learn new things, find support, get out of their
                         comfort zones, and pursue their passions, together. Membership is free.</p>
                     <button>Sign up</button>
@@ -301,6 +342,7 @@
         </section>
         <section class="categories">
             <div class="categories-container">
+                <h2>Explore top categories</h2>
                 <div class="categories__item-list">
                     <button class="categories-item">
                         <img src="./img/cat1.svg" alt="categories-item">
@@ -400,7 +442,9 @@
                 </div>
                 <div class="friendships__item-list">
                     <div class="friendships-item">
-                        <img src="./img/first_article.svg" alt="friendships">
+                        <div class="friendships-item__img">
+                            <img src="./img/first_article.svg" alt="friendships">
+                        </div>
                         <div class="friendships-item__text">
                             <h4>I Used Meetup to Make Friends at
                                 Brunch</h4>
@@ -413,7 +457,9 @@
                         </div>
                     </div>
                     <div class="friendships-item">
-                        <img src="./img/second_article.svg" alt="friendships">
+                        <div class="friendships-item__img">
+                            <img src="./img/second_article.svg" alt="friendships">
+                        </div>
                         <div class="friendships-item__text">
                             <h4>How to Turn Casual Connections into
                                 Close Friendships</h4>
@@ -424,7 +470,9 @@
                         </div>
                     </div>
                     <div class="friendships-item">
-                        <img src="./img/third_article.svg" alt="friendships">
+                        <div class="friendships-item__img">
+                            <img src="./img/third_article.svg" alt="friendships">
+                        </div>
                         <div class="friendships-item__text">
                             <h4>Do You Have the “Right” Number of
                                 Friends?</h4>

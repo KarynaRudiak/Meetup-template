@@ -97,7 +97,7 @@ const renderEvents = (arr) => {
         const eventElement = document.createElement('div');
         eventElement.classList.add('filter-event_item');
         eventElement.innerHTML = `
-            <div class="filter-image ${imageClass}">
+            <div class="filter-image" ${imageClass}">
                 <img src="${event.image}" alt="${event.title}">
             </div>
             <div class="filter-item__text">
@@ -213,8 +213,17 @@ resetBtn.addEventListener('click', () => {
 
 //close
 const btnClose = document.querySelector('.iframe-close');
-const map = document.querySelector('.iframe-wrap')
+const overlay = document.querySelector('.iframe-overley');
+const iframeWrap = document.querySelector('.iframe-wrap');
 
 btnClose.addEventListener('click', () => {
-    map.classList.toggle('hidden')
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+    if (iframeWrap) {
+        iframeWrap.classList.add('hide-before');
+    }
+    if (btnClose) {
+        btnClose.remove();
+    }
 })

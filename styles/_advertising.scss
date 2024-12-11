@@ -14,6 +14,10 @@
             max-width: 739px;
             padding-right: 75px;
 
+            .img-sml {
+                display: none;
+            }
+
             h3 {
                 font-weight: 600;
                 font-size: 28px;
@@ -38,6 +42,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 max-width: 192px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #921e3f;
+                }
             }
         }
     }
