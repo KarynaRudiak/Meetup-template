@@ -1,8 +1,16 @@
 .categories {
     margin-bottom: 64px;
 
+    h2 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
     &__item-list {
         display: flex;
+        flex-wrap: wrap;
         gap: 16px;
         justify-content: space-between;
     }
@@ -20,6 +28,12 @@
         border-radius: 8px;
         background-color: #97CAD114;
         cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            background-color: #C2E4E9;
+            transform: scale(1.1);
+        }
 
         h3 {
             font-size: 16px;

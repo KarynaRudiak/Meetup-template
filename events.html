@@ -3,87 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
     <title>Meetup</title>
 </head>
 <body>
     <header class="header">
-        <nav class="header-container">
+        <div class="header-container">
             <div class="header-container__left">
-                <a href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
+                <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="logo"></a>
                 <div class="header-search">
-                    <input type="search" placeholder="Search events">
-                    <input type="search" value="Berlin, DE">
+                    <input class="search" type="search" placeholder="Search events">
+                    <input class="search" type="search" value="Berlin, DE">
                 </div>
             </div>
-            <div class="header-container__right">
-                <button class="eng">English</button>
-                <button class="logIn">Log in</button>
-                <button class="signUp">Sign Up</button>
-            </div>
-        </nav>
+            <nav class="header-container__right">
+                <a href="#" class="eng">English</a>
+                <a href="#" class="logIn">Log in</a>
+                <a href="#" class="signUp">Sign Up</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="filter"></section>
-        <div class="filter-container">
-            <div class="filter-container__left">
-                <div class="filter-title">
-                    <h2>Events near Berlin, DE</h2>
-                    <h3 class="filter-title__h3">Events</h3>
-                </div>
-                <div class="filter-wrap">
-                    <button class="filter-btn">Choose Category</button>
-                    <ul class="filter-menu">
-                        <li class="filter-item" id="social">Social Activities</li>
-                        <li class="filter-item" id="hobbies">Hobbies and Passions</li>
-                        <li class="filter-item" id="health">Health and Wellbeing</li>
-                        <li class="filter-item" id="business">Business</li>
-                        <li class="filter-item" id="technology">Technology</li>
-                    </ul>
-                </div>
-                
-                <div class="filter-wrap">
-                    <button class="filter-btn" id="distance">Choose Distance</button>
-                    <ul class="filter-menu">
-                        <li class="filter-item" id="5">5 km</li>
-                        <li class="filter-item" id="10">10 km</li>
-                        <li class="filter-item" id="15">15 km</li>
-                        <li class="filter-item" id="25">25 km</li>
-                        <li class="filter-item" id="50">50 km</li>
-                        <li class="filter-item" id="75">75 km</li>
-                        <li class="filter-item" id="100">100 km</li>
-                    </ul>
-                </div>
-                
-                <div class="filter-wrap">
-                    <button class="filter-btn">Choose Type</button>
-                    <ul class="filter-menu">
-                        <li class="filter-item" id="online">Online</li>
-                        <li class="filter-item" id="offline">Offline</li>
-                    </ul>
-                </div>
-                
-                <div class="filter-wrap">
-                    <button class="filter-btn" id="day">Filter by Day</button>
-                </div>
-                
-                
-                <button class="filter__reset" id="reset">Reset filters</button>
-                    <div class="filter-list"></div>
+        <div class="header-search__sml">
+            <input class="search" type="search" placeholder="Search events">
+        </div>
+        <section class="filter">
+            <div class="filter-container">
+                <div class="filter-container__left">
+                    <div class="filter-title">
+                        <h2>Events near Berlin, DE</h2>
+                        <div class="filter-title__menu">
+                            <h3>Events</h3>
+                            <button class="filter__reset" id="reset">Reset filters</button>
+                        </div>
+                    </div>
+                    <!-- filter -->
+                    <div class="filter-wrap">
+                        <div class="filter-wrap__item">
+                            <button class="filter-btn">Choose Category</button>
+                            <ul class="filter-menu">
+                                <li class="filter-item" id="social">Social Activities</li>
+                                <li class="filter-item" id="hobbies">Hobbies and Passions</li>
+                                <li class="filter-item" id="health">Health and Wellbeing</li>
+                                <li class="filter-item" id="business">Business</li>
+                                <li class="filter-item" id="technology">Technology</li>
+                            </ul>
+                        </div>
                         
-            </div>  
-            <div class="filter-container__right">
-                <p>Find events near</p>
-                <h3>Berlin, DE</h3>
-                <div class="iframe-wrap">
-                    <button class="iframe-close"><img src="./img/close.svg" alt="close"></button>
-                    <div class="iframe-overley">
+                        <div class="filter-wrap__item">
+                            <button class="filter-btn" id="distance">Choose Distance</button>
+                            <ul class="filter-menu">
+                                <li class="filter-item" id="5">5 km</li>
+                                <li class="filter-item" id="10">10 km</li>
+                                <li class="filter-item" id="15">15 km</li>
+                                <li class="filter-item" id="25">25 km</li>
+                                <li class="filter-item" id="50">50 km</li>
+                                <li class="filter-item" id="75">75 km</li>
+                                <li class="filter-item" id="100">100 km</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filter-wrap__item">
+                            <button class="filter-btn">Choose Type</button>
+                            <ul class="filter-menu">
+                                <li class="filter-item" id="online">Online</li>
+                                <li class="filter-item" id="offline">Offline</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filter-wrap__item">
+                            <button class="filter-btn" id="day">Filter by Day</button>
+                        </div>
+                    </div>
+                    <div class="filter-list"></div>
+                            
+                </div>  
+                <div class="filter-container__right">
+                    <p>Find events near</p>
+                    <h3>Berlin, DE</h3>
+                    <div class="iframe-wrap">
+                        <button class="iframe-close"><img src="./img/close.svg" alt="close"></button>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310847.3191151419!2d13.09509286889401!3d52.50638615478068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1733833656462!5m2!1sen!2sde" width="350" height="285" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+       
             
         </div>
     </main>

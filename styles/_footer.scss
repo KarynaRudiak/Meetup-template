@@ -1,6 +1,8 @@
 .footer {
+    max-width: 1512px;
+    margin: 0 auto;
+
     &-container {
-        max-width: 1512px;
         background-color: #212121;
         padding: 24px 196px 40px 196px;
     }
@@ -61,6 +63,10 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 20px;
+
+                &:hover {
+                    color: white;
+                } 
             }
             
         }
@@ -87,11 +93,14 @@
 
             li {
                 list-style: none;
-            }
 
-            a {
-                color: #C5C4C4;
-                text-decoration: none;
+                a {
+                    color: #C5C4C4;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
 
             .first-elem {
@@ -101,7 +110,7 @@
     }
     
     hr {
-        color: #707070;
+        border: 1px solid #707070;
     }
 }
 
