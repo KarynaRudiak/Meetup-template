@@ -97,7 +97,7 @@ const renderEvents = (arr) => {
         const eventElement = document.createElement('div');
         eventElement.classList.add('filter-event_item');
         eventElement.innerHTML = `
-            <div class="filter-image" ${imageClass}">
+            <div class="filter-image ${imageClass}">
                 <img src="${event.image}" alt="${event.title}">
             </div>
             <div class="filter-item__text">
@@ -196,14 +196,10 @@ typeBtnOffline.addEventListener('click', () => {
 
 //day 
 const dayBtn = document.getElementById('day');
-
-
 dayBtn.addEventListener('click', () => {
     const allEventsSorted = [...eventsStore].sort((a, b) => new Date(a.date) - new Date(b.date));
     renderEvents(allEventsSorted);
 });
-
-
 
 //reset
 const resetBtn = document.getElementById('reset')
@@ -213,17 +209,8 @@ resetBtn.addEventListener('click', () => {
 
 //close
 const btnClose = document.querySelector('.iframe-close');
-const overlay = document.querySelector('.iframe-overley');
-const iframeWrap = document.querySelector('.iframe-wrap');
+const map = document.querySelector('.filter-container__right')
 
 btnClose.addEventListener('click', () => {
-    if (overlay) {
-        overlay.style.display = 'none';
-    }
-    if (iframeWrap) {
-        iframeWrap.classList.add('hide-before');
-    }
-    if (btnClose) {
-        btnClose.remove();
-    }
+    map.classList.toggle('hidden')
 })

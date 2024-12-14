@@ -65,6 +65,7 @@
     &-wrap {
         position: relative;
         margin-right: 10px;
+        display: flex;
 
         &__item {
             &:hover .filter-menu {
