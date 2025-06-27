@@ -1,6 +1,7 @@
 {
   "name": "final_project",
   "version": "1.0.0",
+  "homepage": "https://karyna-rudiak.github.io/meetup-project",
   "main": "script.js",
   "type": "module",
   "scripts": {
